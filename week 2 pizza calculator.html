@@ -1,0 +1,33 @@
+<HTML>
+  <!-- NAAM: Narison Clemencia
+      OPDRACHT: Pizza calculator-->
+<body>
+
+  <script>
+
+        const SMALLPRICE  = 495;
+        const MEDIUMPRIJS = 595;
+        const LARGEPRIJS  = 695;
+
+        var small   = parseInt(prompt("hoeveel small pizza's wilt u?","0"));
+        var medium  = parseInt(prompt("hoeveel medium pizza's wilt u?","0"));
+        var large   = parseInt(prompt("hoeveel large pizza's wilt u?","0"));
+
+        var smallPrijsTotaal= (small * SMALLPRICE) / 100;
+        var mediumPrijsTotaal= (medium * MEDIUMPRIJS) / 100;
+        var largePrijsTotaal= (large * LARGEPRIJS) / 100;
+
+        var eindPrijs= (smallPrijsTotaal + mediumPrijsTotaal + largePrijsTotaal).toFixed(2)
+
+        document.write ("aantal small pizza's bestelt: ",small,"(€",smallPrijsTotaal,")", "<br>" ,
+                        "aantal medium pizza's bestelt: ",medium,"(€",mediumPrijsTotaal,")", "<br>" ,
+                        "aantal small pizza's bestelt: ",large,"(€",largePrijsTotaal,")"
+                        ,"<br>","<br>",
+                        "totaal te betalen : €", eindPrijs
+                      )
+
+
+  </script>
+
+</body>
+</HTML>
