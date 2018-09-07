@@ -5,26 +5,26 @@
 
   <script>
 
-        const SMALLPRICE  = 495;
-        const MEDIUMPRIJS = 595;
-        const LARGEPRIJS  = 695;
+        const SMALLPRICE  = 495;<!--dit geeft de standaard prijs aan van een small pizza-->
+        const MEDIUMPRIJS = 595;<!--dit geeft de standaard prijs aan van een medium pizza-->
+        const LARGEPRIJS  = 695;<!--dit geeft de standaard prijs aan van een large pizza-->
 
-        var small   = parseInt(prompt("hoeveel small pizza's wilt u?","0"));
-        var medium  = parseInt(prompt("hoeveel medium pizza's wilt u?","0"));
-        var large   = parseInt(prompt("hoeveel large pizza's wilt u?","0"));
+        var small   = parseInt(prompt("hoeveel small pizza's wilt u?","0"));<!--geeft aan hoeveel small pizzas de klant wilt-->
+        var medium  = parseInt(prompt("hoeveel medium pizza's wilt u?","0"));<!--geeft aan hoeveel medium pizzas de klant wilt-->
+        var large   = parseInt(prompt("hoeveel large pizza's wilt u?","0"));<!--geeft aan hoeveel small pizzas de klant wilt-->
 
-        var smallPrijsTotaal= (small * SMALLPRICE) / 100;
-        var mediumPrijsTotaal= (medium * MEDIUMPRIJS) / 100;
-        var largePrijsTotaal= (large * LARGEPRIJS) / 100;
+        var smallPrijsTotaal= (small * SMALLPRICE) / 100;<!--berekent de prijs totaal van alle small pizzas bij elkaar -->
+        var mediumPrijsTotaal= (medium * MEDIUMPRIJS) / 100;<!--berekent de prijs totaal van alle medium pizzas bij elkaar-->
+        var largePrijsTotaal= (large * LARGEPRIJS) / 100;<!---->
 
-        var eindPrijs= (smallPrijsTotaal + mediumPrijsTotaal + largePrijsTotaal).toFixed(2)
+        var eindPrijs= (smallPrijsTotaal + mediumPrijsTotaal + largePrijsTotaal).toFixed(2)<!--totaal prijs van alle bestelde pizzas-->
 
         document.write ("aantal small pizza's bestelt: ",small,"(€",smallPrijsTotaal,")", "<br>" ,
                         "aantal medium pizza's bestelt: ",medium,"(€",mediumPrijsTotaal,")", "<br>" ,
                         "aantal small pizza's bestelt: ",large,"(€",largePrijsTotaal,")"
                         ,"<br>","<br>",
                         "totaal te betalen : €", eindPrijs
-                      )
+                      )<!--dit laat alle zien wat er bestelt wordt en waarvoor betaalt wordt-->
 
 
   </script>
